@@ -1,0 +1,264 @@
+@font-face {
+    font-family: 'TT Lakes Regular';
+    src: url('../fonts/TTLakes-Regular.eot');
+    src: url('../fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Regular.woff') format('woff'),
+    url('../fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'TT Lakes Medium';
+    src: url('../fonts/TTLakes-Medium.eot');
+    src: url('../fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Medium.woff') format('woff'),
+    url('../fonts/TTLakes-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'TT Lakes Bold';
+    src: url('../fonts/TTLakes-Bold.eot');
+    src: url('../fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Bold.woff') format('woff'),
+    url('../fonts/TTLakes-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    html {
+        font: 14px 'TT Lakes Regular';
+        letter-spacing: -0.2px;
+        
+        }
+        
+        *,
+        *::after,
+        *::before  {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 0;
+        }
+        
+        img {
+            display: block;
+        }           
+        
+        :root {
+            --base-size: 16px;
+        }
+        
+        body {
+            background-color: #F2F2F2;            
+            
+        }
+
+        .block-1-4 {
+            display: flex;
+            flex-flow: column;
+            width: 320px;                       
+            background: #FFFFFF;                                 
+            box-shadow:  16px 0 20px -2px  rgba(14, 24, 80, 0.2);  
+        }
+        
+        .container-center {
+            padding: 0 24px; 
+                         
+        }
+        
+               
+        
+        /*=========================
+        header
+        =========================*/        
+               
+        
+                
+        /*=========================
+        btn
+        =========================*/
+        
+        .btn-group {
+            display: flex; 
+            align-items: center;
+            padding: 16px 0;
+            
+                 
+        }        
+              
+        .btn-group__button {
+            align-items: center;
+            min-width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            text-decoration: none;
+            font: 16px 'TT Lakes Medium';
+            color: black;
+            background: #F8F8F8;
+            transition: opacity 0.3s; 
+                   
+        }
+        
+        .btn-group__button:not(:last-child) {
+           margin-right: 16px; 
+        }
+        
+        .btn-group__button:hover,
+        .btn-group__button:focus,
+        .logo:hover {
+            color: #1e1e1e;
+            opacity: 0.7;            
+            transition: opacity 0.3s infinite;     
+        }
+             
+        .btn-group__button-call {    
+            background: url(../img/icon-call.svg) no-repeat;
+        }
+        
+        .btn-group__button-profile {    
+            background: url(../img/icon-profile.svg) no-repeat;
+        }
+        
+        .btn-group__button-chat {    
+            background: url(../img/icon-chat.svg) no-repeat;
+        }
+        
+               
+        .btn-group__button-close {    
+            background: url(../img/icon-close.svg) no-repeat right;
+        }
+        
+        .btn-group__button-search {    
+            background: url(../img/icon-search.svg) no-repeat right;
+        }         
+               
+        .logo {
+            flex: 1; 
+            margin-right: 16px;
+            transition: opacity 0.3s; 
+        }
+        
+        .logo__img {
+            display: block;
+        }
+                
+        /*=========================
+        nav
+        /*=========================*/
+        
+            
+        .nav-vertical {
+           flex:1; 
+           margin-top: 34px;
+        }
+        
+                    
+        .nav-vertical__item {
+            display: block;
+            text-decoration: none;
+            line-height: 24px;
+            font: 16px 'TT Lakes Medium';
+            color: #1B1C21;           
+            letter-spacing: -0.2px;
+            padding: 5px 24px;
+            margin-bottom: 22px;
+            transition: color 0.3s; 
+        
+        } 
+
+        .nav-vertical__item--active,        
+        .nav-vertical__item:focus,
+        .nav-vertical__item:hover {
+            position: relative;            
+            color: #7E7E82;
+            transition: color 0.3s;
+                           
+        }     
+               
+        .nav-vertical__item--active:before {
+            content: "";
+            position: absolute;
+            left:0;
+            top: 0;
+            width: 4px;
+            height: 32px;
+            background: url(../img/highlight-4x32.svg);
+            
+        }
+
+          
+        /*=========================
+        footer
+        =========================*/
+        
+        .block-1-4__footer a {
+            display: block;
+            text-decoration: none;
+            line-height: 24px;
+            color: #1B1C21;
+            transition: color 0.3s;
+
+        }
+
+
+
+        .mail-link {
+           font-size: 16px;
+           font-family: 'TT Lakes Medium';
+           margin-bottom: 12px; 
+        }
+
+        .tel-link {
+            font-size: 24px;
+            font-family: 'TT Lakes Bold';
+            margin-bottom: 40px;
+        }
+
+        .choose-language {
+            display: flex;
+            margin-bottom: 30px;
+        }
+        
+        .choose-language__item {
+            margin-right: 7px;
+        }
+
+        .mail-link:hover,
+        .mail-link:focus,
+        .tel-link:hover,
+        .tel-link:focus,
+        .choose-language__item:hover,
+        .choose-language__item:focus,
+        .choose-language__item.choose-language__item--active {
+            color: #7E7E82;            
+            transition: color 0.3s;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
