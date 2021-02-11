@@ -110,9 +110,10 @@
         .btn-group__button:focus,
         .logo:hover {
             color: #1e1e1e;
-            opacity: 0.7;            
+            opacity: 0.7;
+            cursor: pointer;              
             transition: opacity 0.3s infinite;     
-        }
+        }                   
              
         .btn-group__button-call {    
             background: url(../img/icon-call.svg) no-repeat;
